@@ -1,0 +1,15 @@
+<html>
+<form action="/" method="POST">
+    my guess: {{guess}}
+     <label for="name">choose answer:</label>
+      <select name="answer">
+      <option value="to_small">too small</option>
+      <option value="to_much">too much</option>
+      <option value="jackpot">correct</option>
+    </select>
+    <input type="hidden" value="{{min}}" name="min">
+    <input type="hidden" value="{{max}}" name="max">
+    <input type="hidden" value="{{guess}}" name="guess">
+    <input type="submit" value="Submit">
+</form>
+</html>

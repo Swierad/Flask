@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Result Generator</title>
+</head>
+<body>
+<form action="/" method="POST">
+
+How many throws?
+<input type="number" name="no_of_dice_throws">
+
+<label for="dice_type">choose dice type:</label>
+      <select name="dice_type">
+      <option value="3">D3</option>
+      <option value="4">D4</option>
+      <option value="6">D6</option>
+      <option value="8">D8</option>
+      <option value="10">D10</option>
+      <option value="12">D12</option>
+      <option value="20">D20</option>
+      <option value="100">D100</option>
+    </select>
+
+result modifier:
+
+<input type="number" name="result_modifier" value="0">
+
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
